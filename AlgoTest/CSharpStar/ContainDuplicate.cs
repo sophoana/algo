@@ -22,12 +22,12 @@ namespace AlgoTest.CSharpStar
         }
 
         [Test]
-        void CheckDuplicate_Test()
+        public void CheckDuplicate_Test()
         {
             int[] input = { 1, 2, 3, 2 };
             bool expected = true;
             var result = CheckDuplicate(input);
-            Assert.IsTrue(result);
+            Assert.IsTrue(result == expected);
         }
 
     }

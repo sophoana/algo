@@ -16,4 +16,8 @@
     <ProjectReference Include="..\LeetCode\LeetCode.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="SearchAlgorithm\" />
+  </ItemGroup>
+
 </Project>

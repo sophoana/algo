@@ -8,15 +8,37 @@ namespace ThycoticTest
 {
     class Program
     {
+        public static void SwapTwo(ref int a, ref int b)
+        {
+            a = a + b;
+            b = a - b;
+            a = a - b;
+        }
+
+        public static void SwapTwoValue(int a, int b)
+        {
+            a = a + b;
+            b = a - b;
+            a = a - b;
+        }
+
         static void Main(string[] args)
         {
-            var n = 5;
-            var str = Pattern5
-                (n);
+            //var n = 5;
+            //var str = Pattern5
+            //    (n);
 
-            Console.WriteLine(str);
+            //Console.WriteLine(str);
 
-            Console.ReadLine();
+            Print100To1();
+        }
+
+        static void Print100To1()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                Console.WriteLine(100 - i);
+            }
         }
 
         static string Pattern5(int n)
